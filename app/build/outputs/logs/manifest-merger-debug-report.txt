@@ -1,32 +1,32 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:3:5-59
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:3:5-59
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:6:5-71
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:6:5-71
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:6:22-68
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:6:22-68
 uses-permission#android.permission.READ_PROFILE
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:7:5-71
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:7:5-71
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:7:22-68
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:7:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:8:5-72
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:8:5-72
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:8:22-69
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:8:22-69
 application
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:12:5-37:19
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:12:5-39:19
 MERGED from [com.android.support:design:25.3.1] C:\Users\Timothy\.android\build-cache\127cc33a8459dd9ec5405bff407b0ae3713e8819\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Timothy\.android\build-cache\1deeec4440d1799d148bf44cebdcf192d557cd05\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Timothy\.android\build-cache\180d09b831f3616d522cfc41f1d304228c429b81\output\AndroidManifest.xml:26:5-20
@@ -41,47 +41,51 @@ MERGED from [com.android.support:gridlayout-v7:25.3.1] C:\Users\Timothy\.android
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\Timothy\.android\build-cache\2ed326cad42831428c704217af1d5d0c1e0d9841\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Timothy\.android\build-cache\f03cddc533dc946b06ba6ae8253ef3188ea9ead2\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:15:9-41
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:15:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:17:9-35
 	android:roundIcon
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:16:9-54
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:16:9-54
 	android:allowBackup
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:13:9-35
 	android:icon
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:14:9-43
 	android:theme
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:18:9-40
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:18:9-40
 activity#com.example.timothy.graciecombativestracker2.LoginActivity
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:19:9-28:20
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:19:9-29:20
+	android:screenOrientation
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:21:13-49
 	android:label
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:21:13-45
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:22:13-45
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:20:13-42
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:20:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.example.timothy.graciecombativestracker2.MainPage
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:29:9-35:20
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:30:9-37:20
+	android:screenOrientation
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:31:13-49
 	android:parentActivityName
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:30:13-56
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:32:13-56
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:29:19-43
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:30:19-43
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:32:13-34:50
+ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:34:13-36:50
 	android:value
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:34:17-47
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:36:17-47
 	android:name
-		ADDED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml:33:17-63
+		ADDED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml:35:17-63
 uses-sdk
-INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] C:\Users\Timothy\.android\build-cache\127cc33a8459dd9ec5405bff407b0ae3713e8819\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Timothy\.android\build-cache\1deeec4440d1799d148bf44cebdcf192d557cd05\output\AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\Timothy\.android\build-cache\180d09b831f3616d522cfc41f1d304228c429b81\output\AndroidManifest.xml:20:5-44
@@ -99,11 +103,11 @@ MERGED from [com.android.support:support-compat:25.3.1] C:\Users\Timothy\.androi
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\Timothy\.android\build-cache\127cc33a8459dd9ec5405bff407b0ae3713e8819\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Timothy\Desktop\Electronics Solns\GracieCombativesTracker22\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Timothy\Desktop\GracieCombativesTracker\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\Timothy\.android\build-cache\127cc33a8459dd9ec5405bff407b0ae3713e8819\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\Timothy\.android\build-cache\1deeec4440d1799d148bf44cebdcf192d557cd05\output\AndroidManifest.xml:25:5-27:34

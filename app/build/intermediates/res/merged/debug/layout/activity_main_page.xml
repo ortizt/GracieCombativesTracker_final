@@ -1,39 +1,1048 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorBackground"
-    android:orientation="vertical"
-    tools:context="com.example.timothy.graciecombativestracker2.MainPage"
-    tools:layout_editor_absoluteY="25dp"
-    tools:layout_editor_absoluteX="0dp">
+    android:layout_height="match_parent">
 
-    <ScrollView
-        android:id="@+id/scrollView4"
-        android:layout_width="417dp"
-        android:layout_height="750dp"
-        android:layout_gravity="bottom"
-        android:layout_below="@+id/frameLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp">
+
+                <ImageView
+                    android:id="@+id/beltbg"
+                    android:layout_width="270dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/beltstripe4"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginRight="62dp"
+                    android:background="#000000"
+                    android:padding="1dp"
+                    app:srcCompat="@drawable/beltbg"
+                    tools:ignore="ContentDescription" />
+
+                <ProgressBar
+                    android:id="@+id/beltstripe4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="15dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/beltstripe3"
+                    android:layout_toRightOf="@+id/beltstripe3"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+                <ProgressBar
+                    android:id="@+id/beltstripe3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="15dp"
+                    android:layout_height="35dp"
+                    android:layout_alignLeft="@+id/beltstripe2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/beltstripe2"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_drawable_vertical"
+                    tools:ignore="TooManyViews" />
+
+                <ProgressBar
+                    android:id="@+id/beltstripe2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="15dp"
+                    android:layout_height="35dp"
+                    android:layout_alignEnd="@+id/beltbg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/beltbg"
+                    android:layout_marginEnd="89dp"
+                    android:layout_marginRight="89dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_drawable_vertical" />
+
+                <ProgressBar
+                    android:id="@+id/beltstripe1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="15dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="11dp"
+                    android:layout_marginRight="11dp"
+                    android:layout_toLeftOf="@+id/beltstripe2"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_drawable_vertical"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/c12_hlesc"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_alignLeft="@+id/beltbg"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/beltbg"
+                    android:layout_marginTop="387dp"
+                    android:background="@drawable/bordershape"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:text="Standing Headlock Defense"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/clndr"
+                    android:layout_width="47dp"
+                    android:layout_height="46dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginStart="13dp"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/calendar" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="417dp"
+                android:layout_height="62dp"
+                android:layout_gravity="clip_horizontal"
+                app:srcCompat="@drawable/gracicombatives1"
+                tools:ignore="ContentDescription" />
+
+        </FrameLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable">
+
+            <android.support.design.widget.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Tab1" />
+
+            <android.support.design.widget.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Tab2" />
+
+            <android.support.design.widget.TabItem
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Tab3" />
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="1500dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="top">
 
+
+            <TextView
+                android:id="@+id/c23_dblleg"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c23_dblunder"
+                android:layout_toLeftOf="@+id/c23"
+                android:layout_toStartOf="@+id/c23"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Double Leg Takedown (Conservative)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c23button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c23_dblunder"
+                android:layout_alignBottom="@+id/c23_dblunder"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c23"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c22_rear"
+                android:layout_toEndOf="@+id/c23_dblunder"
+                android:layout_toRightOf="@+id/c23_dblunder"
+                android:background="@drawable/bordershape"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="23"
+                android:textOn="23"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c23button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/c23button1"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c23_dblunder"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c22_rear"
+                android:layout_toEndOf="@+id/c22button2"
+                android:layout_toRightOf="@+id/c22button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Double Underhook Pass - Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c22"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c21button2"
+                android:layout_toEndOf="@+id/c22_twist"
+                android:layout_toRightOf="@+id/c22_twist"
+                android:background="@drawable/bordershapedark"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="22"
+                android:textOn="22"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c22button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c22_twist"
+                android:layout_alignBottom="@+id/c22_twist"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c22button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/c22button1"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c22_twist"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c21_pull"
+                android:layout_toEndOf="@+id/c21button2"
+                android:layout_toRightOf="@+id/c21button2"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Twisting Arm Control - Mount"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c22_rear"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/c22_twist"
+                android:layout_alignStart="@+id/c22_twist"
+                android:layout_below="@+id/c22_twist"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Rear Takedown"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c21"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c20"
+                android:layout_toEndOf="@+id/c21_elbow"
+                android:layout_toRightOf="@+id/c21_elbow"
+                android:background="@drawable/bordershape"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="21"
+                android:textOn="21"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c21button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c21_elbow"
+                android:layout_alignBottom="@+id/c21_elbow"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c21button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/c21button1"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c21_elbow"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c20"
+                android:layout_toEndOf="@+id/c20button2"
+                android:layout_toRightOf="@+id/c20button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Elbow Escape - Side Mount"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c21_pull"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c21_elbow"
+                android:layout_toLeftOf="@+id/c21"
+                android:layout_toStartOf="@+id/c21"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Pull Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c20"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c19"
+                android:layout_toEndOf="@+id/c20_take"
+                android:layout_toRightOf="@+id/c20_take"
+                android:background="@drawable/bordershapedark"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="20"
+                android:textOn="20"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c20button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/c20button1"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c20button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/c19button2"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c20_take"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c19"
+                android:layout_toEndOf="@+id/c19button2"
+                android:layout_toRightOf="@+id/c19button2"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Take the Back - Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c20_stand"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/c20_take"
+                android:layout_alignStart="@+id/c20_take"
+                android:layout_below="@+id/c20_take"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Standing Headlock Defense"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c19"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c18_hay"
+                android:layout_toEndOf="@+id/c19_hook"
+                android:layout_toRightOf="@+id/c19_hook"
+                android:background="@drawable/bordershape"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="19"
+                android:textOn="19"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c19button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c19_hook"
+                android:layout_alignBottom="@+id/c19_hook"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c19button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/c19button1"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c19_guil"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/c19_hook"
+                android:layout_alignStart="@+id/c19_hook"
+                android:layout_below="@+id/c19_hook"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Guillotine Defense"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c19_hook"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c18_hay"
+                android:layout_toEndOf="@+id/c18button2"
+                android:layout_toRightOf="@+id/c18button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Hook Sweep - Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c18"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c17"
+                android:layout_toEndOf="@+id/c18_punsh"
+                android:layout_toRightOf="@+id/c18_punsh"
+                android:background="@drawable/bordershapedark"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="18"
+                android:textOn="18"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c18button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/c18_hay"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c18button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c18_punsh"
+                android:layout_alignBottom="@+id/c18_punsh"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c18_hay"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c18_punsh"
+                android:layout_toLeftOf="@+id/c18"
+                android:layout_toStartOf="@+id/c18"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Haymaker Punch Defense"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c18_punsh"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c17"
+                android:layout_toEndOf="@+id/c17button2"
+                android:layout_toRightOf="@+id/c17button2"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Punch Block Series (5) - Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c17"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c16"
+                android:layout_toEndOf="@+id/c17_kim"
+                android:layout_toRightOf="@+id/c17_kim"
+                android:background="@drawable/bordershape"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="17"
+                android:textOn="17"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c17button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c17_kim"
+                android:layout_alignBottom="@+id/c17_kim"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c17button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/c17_leg"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c17_leg"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c17_kim"
+                android:layout_toLeftOf="@+id/c17"
+                android:layout_toStartOf="@+id/c17"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Leg Hook Takedown"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c17_kim"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c16button2"
+                android:layout_toEndOf="@+id/c16button2"
+                android:layout_toRightOf="@+id/c16button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Kimura Armlock - Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c16button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/c16"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c16button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c16_shrmp"
+                android:layout_alignBottom="@+id/c16_shrmp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c16"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c15"
+                android:layout_toEndOf="@+id/c16_body"
+                android:layout_toRightOf="@+id/c16_body"
+                android:background="@drawable/bordershapedark"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="16"
+                android:textOn="16"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/c16_shrmp"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c15button2"
+                android:layout_toEndOf="@+id/c16button2"
+                android:layout_toRightOf="@+id/c16button2"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Shrimp Escape - Side Mount"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c16_body"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c16_shrmp"
+                android:layout_toEndOf="@+id/c16button2"
+                android:layout_toRightOf="@+id/c16button2"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Body Fold Takedown"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c15"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c14"
+                android:layout_toEndOf="@+id/c14_guil"
+                android:layout_toRightOf="@+id/c14_guil"
+                android:background="@drawable/bordershape"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="15"
+                android:textOn="15"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c15button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/c15_clinch"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c15button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c15_head"
+                android:layout_alignBottom="@+id/c15_head"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c15_clinch"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/c15"
+                android:layout_toLeftOf="@+id/c15"
+                android:layout_toStartOf="@+id/c15"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Clinch (Agressive Opponent)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c15_head"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_above="@+id/c15_clinch"
+                android:layout_below="@+id/c14"
+                android:layout_toEndOf="@+id/c15button2"
+                android:layout_toRightOf="@+id/c15button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Headlock Escape 2 - Side Mount"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c14"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c13"
+                android:layout_toEndOf="@+id/c14_guil"
+                android:layout_toRightOf="@+id/c14_guil"
+                android:background="@drawable/bordershapedark"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="14"
+                android:textOn="14"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c14button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c14_dbl"
+                android:layout_alignBottom="@+id/c14_dbl"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c14button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/c14"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c14_guil"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/c14button2"
+                android:layout_below="@+id/c14_dbl"
+                android:layout_toEndOf="@+id/c14button1"
+                android:layout_toRightOf="@+id/c14button1"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Guillotine Choke (Guard Pull)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c14_dbl"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c13_clinch"
+                android:layout_toEndOf="@+id/c14button1"
+                android:layout_toRightOf="@+id/c14button1"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Double Ankle Sweep - Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c13"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c12"
+                android:layout_toEndOf="@+id/c13_straight"
+                android:layout_toRightOf="@+id/c13_straight"
+                android:background="@drawable/bordershape"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="13"
+                android:textOn="13"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c13button2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/c13_straight"
+                android:layout_alignBottom="@+id/c13_straight"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c13button1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/c13_clinch"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c13_clinch"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/c13"
+                android:layout_below="@+id/c13_straight"
+                android:layout_toEndOf="@+id/c13button2"
+                android:layout_toRightOf="@+id/c13button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Clinch (Aggressive Opponent)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c13_straight"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c12"
+                android:layout_toEndOf="@+id/c13button2"
+                android:layout_toRightOf="@+id/c13button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Straight Armlock - Guard"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <ToggleButton
                 android:id="@+id/c12"
                 android:layout_width="75dp"
                 android:layout_height="80dp"
                 android:layout_below="@+id/c11"
-                android:layout_toEndOf="@+id/c11_stheadlockdef"
-                android:layout_toRightOf="@+id/c11_stheadlockdef"
-                android:background="@drawable/bordershape"
+                android:layout_toEndOf="@+id/c13_straight"
+                android:layout_toRightOf="@+id/c13_straight"
+                android:background="@drawable/bordershapedark"
                 android:clickable="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
@@ -49,7 +1058,7 @@
                 android:id="@+id/c12button2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignBottom="@+id/c12_starmlock"
+                android:layout_above="@+id/c13_straight"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:background="@drawable/button_effect"
@@ -62,8 +1071,8 @@
                 android:id="@+id/c12button1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_alignBaseline="@+id/c12_hlesc1"
-                android:layout_alignBottom="@+id/c12_hlesc1"
+                android:layout_alignBaseline="@+id/c12_hlesc"
+                android:layout_alignBottom="@+id/c12_hlesc"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:background="@drawable/button_effect"
@@ -73,33 +1082,33 @@
                 android:textOn="" />
 
             <TextView
-                android:id="@+id/c12_hlesc1"
+                android:id="@+id/c12_starmlock"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
-                android:layout_alignLeft="@+id/c11_stheadlockdef"
-                android:layout_alignStart="@+id/c11_stheadlockdef"
-                android:layout_below="@+id/c11_stheadlockdef"
-                android:background="@drawable/bordershape"
+                android:layout_below="@+id/c12_hlesc"
+                android:layout_toEndOf="@+id/c13button2"
+                android:layout_toRightOf="@+id/c13button2"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
-                android:text="Headlock Escape 1 - Side Mount"
+                android:text="Standing Armlock"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/c12_starmlock"
+                android:id="@+id/c12_hlesc"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
-                android:layout_alignLeft="@+id/c12_hlesc1"
-                android:layout_alignStart="@+id/c12_hlesc1"
-                android:layout_below="@+id/c12_hlesc1"
-                android:background="@drawable/bordershape"
+                android:layout_alignLeft="@+id/c11_stheadlockdef"
+                android:layout_alignStart="@+id/c11_stheadlockdef"
+                android:layout_below="@+id/c11_stheadlockdef"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
-                android:text="Standing Armlock"
+                android:text="Headlock Escape 1 - Side Mount"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp" />
@@ -127,7 +1136,7 @@
                 android:id="@+id/c11button2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_above="@+id/c12_hlesc1"
+                android:layout_above="@+id/c12_hlesc"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:background="@drawable/button_effect"
@@ -170,6 +1179,9 @@
                 android:id="@+id/c11_stheadlockdef"
                 android:layout_width="250dp"
                 android:layout_height="40dp"
+                android:layout_alignLeft="@+id/c11_headlockc"
+                android:layout_alignStart="@+id/c11_headlockc"
+                android:layout_below="@+id/c11_headlockc"
                 android:background="@drawable/bordershape"
                 android:ems="10"
                 android:gravity="center_vertical"
@@ -177,10 +1189,7 @@
                 android:text="Standing Headlock Defense"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="16sp"
-                android:layout_below="@+id/c11_headlockc"
-                android:layout_alignLeft="@+id/c11_headlockc"
-                android:layout_alignStart="@+id/c11_headlockc" />
+                android:textSize="16sp" />
 
             <ToggleButton
                 android:id="@+id/c10"
@@ -189,7 +1198,7 @@
                 android:layout_below="@+id/c9"
                 android:layout_toEndOf="@+id/c9_pullguard"
                 android:layout_toRightOf="@+id/c9_pullguard"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:clickable="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
@@ -235,7 +1244,7 @@
                 android:layout_alignBottom="@+id/c10"
                 android:layout_alignLeft="@+id/c10_poscont"
                 android:layout_alignStart="@+id/c10_poscont"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
@@ -251,7 +1260,7 @@
                 android:layout_below="@+id/c9"
                 android:layout_toEndOf="@+id/c9button2"
                 android:layout_toRightOf="@+id/c9button2"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
@@ -345,7 +1354,7 @@
                 android:layout_below="@+id/c7"
                 android:layout_toEndOf="@+id/c7_hpDef"
                 android:layout_toRightOf="@+id/c7_hpDef"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:clickable="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
@@ -391,7 +1400,7 @@
                 android:layout_below="@+id/c8_elevsweep"
                 android:layout_toEndOf="@+id/c8button1"
                 android:layout_toRightOf="@+id/c8button1"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
@@ -407,7 +1416,7 @@
                 android:layout_below="@+id/c7"
                 android:layout_toEndOf="@+id/c8button1"
                 android:layout_toRightOf="@+id/c8button1"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
@@ -501,7 +1510,7 @@
                 android:layout_below="@+id/c5"
                 android:layout_toEndOf="@+id/c6_straightAl"
                 android:layout_toRightOf="@+id/c6_straightAl"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:clickable="false"
                 android:focusable="false"
                 android:focusableInTouchMode="false"
@@ -547,7 +1556,7 @@
                 android:layout_below="@+id/c5"
                 android:layout_toEndOf="@+id/c6button2"
                 android:layout_toRightOf="@+id/c6button2"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
@@ -563,7 +1572,7 @@
                 android:layout_below="@+id/c6_straightAl"
                 android:layout_toEndOf="@+id/c6button2"
                 android:layout_toRightOf="@+id/c6button2"
-                android:background="@drawable/bordershape"
+                android:background="@drawable/bordershapedark"
                 android:ems="10"
                 android:gravity="center_vertical"
                 android:lines="2"
@@ -650,35 +1659,231 @@
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/esstech"
-                android:layout_width="250dp"
-                android:layout_height="30dp"
-                android:layout_toEndOf="@+id/c1button2"
-                android:layout_toRightOf="@+id/c1button2"
-                android:background="@drawable/bordershape"
+            <ToggleButton
+                android:id="@+id/c4"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c3"
+                android:layout_toEndOf="@+id/c4_clinch"
+                android:layout_toRightOf="@+id/c4_clinch"
+                android:background="@drawable/bordershapedark"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:gravity="center_vertical"
-                android:text="36 Essential Techniques"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="20sp"
+                android:textOff="4"
+                android:textOn="4"
+                android:textSize="36sp"
                 android:textStyle="bold" />
 
+            <ToggleButton
+                android:id="@+id/c4button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/c4_clinch"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c4button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/c4_take"
+                android:layout_alignBottom="@+id/c4_take"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
             <TextView
-                android:id="@+id/classes"
-                android:layout_width="75dp"
-                android:layout_height="30dp"
-                android:layout_alignBottom="@+id/esstech"
-                android:layout_alignTop="@+id/esstech"
-                android:layout_toEndOf="@+id/esstech"
-                android:layout_toRightOf="@+id/esstech"
-                android:background="@drawable/bordershape"
+                android:id="@+id/c4_clinch"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c4_take"
+                android:layout_toEndOf="@+id/c4button2"
+                android:layout_toRightOf="@+id/c4button2"
+                android:background="@drawable/bordershapedark"
                 android:gravity="center_vertical"
-                android:text="Classes"
+                android:text="Clinch (Conservative Opponent)"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textSize="20sp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c4_take"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c3_body"
+                android:layout_toEndOf="@+id/c3button2"
+                android:layout_toRightOf="@+id/c3button2"
+                android:background="@drawable/bordershapedark"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Take the Back + R.N.C-Mount"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c3"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c2"
+                android:layout_toEndOf="@+id/c2_clinch"
+                android:layout_toRightOf="@+id/c2_clinch"
+                android:background="@drawable/bordershape"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="3"
+                android:textOn="3"
+                android:textSize="36sp"
                 android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c3button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBottom="@+id/c3_body"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c3button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/c3_pos"
+                android:layout_alignBottom="@+id/c3_pos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c3_body"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/c3_pos"
+                android:layout_alignStart="@+id/c3_pos"
+                android:layout_below="@+id/c3_pos"
+                android:background="@drawable/bordershape"
+                android:gravity="center_vertical"
+                android:text="Body Fold Takedown"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c3_pos"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c2"
+                android:layout_toEndOf="@+id/c2button2"
+                android:layout_toRightOf="@+id/c2button2"
+                android:background="@drawable/bordershape"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:lines="2"
+                android:text="Positional Control - Mount"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/c2"
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/c1"
+                android:layout_toEndOf="@+id/c2_clinch"
+                android:layout_toRightOf="@+id/c2_clinch"
+                android:background="@drawable/bordershapedark"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textOff="2"
+                android:textOn="2"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/c2button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/c3_pos"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <ToggleButton
+                android:id="@+id/c2button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignBaseline="@+id/c2_americana"
+                android:layout_alignBottom="@+id/c2_americana"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/button_effect"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:id="@+id/c2_americana"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c1_leghook"
+                android:layout_toEndOf="@+id/c1button1"
+                android:layout_toRightOf="@+id/c1button1"
+                android:background="@drawable/bordershapedark"
+                android:gravity="center_vertical"
+                android:text="Americana Armlock - (Mount)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/c2_clinch"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/c2_americana"
+                android:layout_toEndOf="@+id/c2button1"
+                android:layout_toRightOf="@+id/c2button1"
+                android:background="@drawable/bordershapedark"
+                android:gravity="center_vertical"
+                android:text="Clinch (Aggressive Opponent)"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp" />
 
             <ToggleButton
                 android:id="@+id/c1"
@@ -751,370 +1956,42 @@
                 android:background="@drawable/bordershape"
                 android:clickable="true"
                 android:gravity="center_vertical"
-                android:text="Trap &amp; Roll Escape-Mount"
+                android:text="Trap &amp; Roll Escape - Mount"
                 android:textAlignment="center"
                 android:textColor="#000000"
                 android:textSize="16sp" />
 
-            <ToggleButton
-                android:id="@+id/c2"
-                android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_below="@+id/c1"
-                android:layout_toEndOf="@+id/c2_clinch"
-                android:layout_toRightOf="@+id/c2_clinch"
-                android:background="@drawable/bordershape"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
+            <TextView
+                android:id="@+id/esstech"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_toEndOf="@+id/c1button2"
+                android:layout_toRightOf="@+id/c1button2"
+                android:background="@drawable/bordershapedark"
                 android:gravity="center_vertical"
+                android:text="36 Essential Techniques"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textOff="2"
-                android:textOn="2"
-                android:textSize="36sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <ToggleButton
-                android:id="@+id/toggleButton23"
+            <TextView
+                android:id="@+id/classes"
                 android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_below="@+id/c1"
-                android:layout_toEndOf="@+id/c2_clinch"
-                android:layout_toRightOf="@+id/c2_clinch"
-                android:background="@drawable/bordershape"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/esstech"
+                android:layout_alignTop="@+id/esstech"
+                android:layout_toEndOf="@+id/esstech"
+                android:layout_toRightOf="@+id/esstech"
+                android:background="@drawable/bordershapedark"
                 android:gravity="center_vertical"
+                android:text="Classes"
                 android:textAlignment="center"
                 android:textColor="#000000"
-                android:textOff="2"
-                android:textOn="2"
-                android:textSize="36sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
-
-            <ToggleButton
-                android:id="@+id/c2button2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignBaseline="@+id/c2_clinch"
-                android:layout_alignBottom="@+id/c2_clinch"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/button_effect"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:textOff=""
-                android:textOn="" />
-
-            <ToggleButton
-                android:id="@+id/c2button1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/c1_leghook"
-                android:background="@drawable/button_effect"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:textOff=""
-                android:textOn="" />
-
-            <TextView
-                android:id="@+id/c2_americana"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_below="@+id/c1_leghook"
-                android:layout_toEndOf="@+id/c1button1"
-                android:layout_toRightOf="@+id/c1button1"
-                android:background="@drawable/bordershape"
-                android:gravity="center_vertical"
-                android:text="Americana Armlock-(Mount)"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/c2_clinch"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_below="@+id/c2_americana"
-                android:layout_toEndOf="@+id/c2button1"
-                android:layout_toRightOf="@+id/c2button1"
-                android:background="@drawable/bordershape"
-                android:gravity="center_vertical"
-                android:text="Clinch (Aggressive Opponent)"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <ToggleButton
-                android:id="@+id/c3"
-                android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_below="@+id/c2"
-                android:layout_toEndOf="@+id/c2_clinch"
-                android:layout_toRightOf="@+id/c2_clinch"
-                android:background="@drawable/bordershape"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:gravity="center_vertical"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textOff="3"
-                android:textOn="3"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-            <ToggleButton
-                android:id="@+id/c3button1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignBaseline="@+id/c3_pos"
-                android:layout_alignBottom="@+id/c3_pos"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/button_effect"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:textOff=""
-                android:textOn="" />
-
-            <ToggleButton
-                android:id="@+id/c3button2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignBottom="@+id/c3_body"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/button_effect"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:textOff=""
-                android:textOn="" />
-
-            <TextView
-                android:id="@+id/c3_pos"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_below="@+id/c2"
-                android:layout_toEndOf="@+id/c2button2"
-                android:layout_toRightOf="@+id/c2button2"
-                android:background="@drawable/bordershape"
-                android:ems="10"
-                android:gravity="center_vertical"
-                android:lines="2"
-                android:text="Positional Control-Mount"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/c3_body"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_alignLeft="@+id/c3_pos"
-                android:layout_alignStart="@+id/c3_pos"
-                android:layout_below="@+id/c3_pos"
-                android:background="@drawable/bordershape"
-                android:gravity="center_vertical"
-                android:text="Body Fold Takedown"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <ToggleButton
-                android:id="@+id/c4"
-                android:layout_width="75dp"
-                android:layout_height="80dp"
-                android:layout_below="@+id/c3"
-                android:layout_toEndOf="@+id/c4_clinch"
-                android:layout_toRightOf="@+id/c4_clinch"
-                android:background="@drawable/bordershape"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:gravity="center_vertical"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textOff="4"
-                android:textOn="4"
-                android:textSize="36sp"
-                android:textStyle="bold" />
-
-            <ToggleButton
-                android:id="@+id/c4button2"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignBottom="@+id/c4_clinch"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/button_effect"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:textOff=""
-                android:textOn="" />
-
-            <ToggleButton
-                android:id="@+id/c4button1"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignBaseline="@+id/c4_take"
-                android:layout_alignBottom="@+id/c4_take"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/button_effect"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:textOff=""
-                android:textOn="" />
-
-            <TextView
-                android:id="@+id/c4_clinch"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_below="@+id/c4_take"
-                android:layout_toEndOf="@+id/c4button2"
-                android:layout_toRightOf="@+id/c4button2"
-                android:background="@drawable/bordershape"
-                android:gravity="center_vertical"
-                android:text="Clinch (Conservative Opponent)"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/c4_take"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_below="@+id/c3_body"
-                android:layout_toEndOf="@+id/c3button2"
-                android:layout_toRightOf="@+id/c3button2"
-                android:background="@drawable/bordershape"
-                android:ems="10"
-                android:gravity="center_vertical"
-                android:lines="2"
-                android:text="Take the Back + R.N.C-Mount"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp" />
 
 
         </RelativeLayout>
-    </ScrollView>
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="417dp"
-        android:layout_height="110dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorBackground">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="104dp">
-
-            <ImageView
-                android:id="@+id/beltbg"
-                android:layout_width="270dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="62dp"
-                android:layout_marginRight="62dp"
-                app:srcCompat="@drawable/beltbg"
-                android:background="#000000"
-                android:padding="1dp"
-                android:layout_alignTop="@+id/beltstripe4"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />/>
-
-            <ProgressBar
-                android:id="@+id/beltstripe4"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="15dp"
-                android:layout_height="35dp"
-                android:layout_alignParentBottom="true"
-                android:layout_below="@+id/frameLayout"
-                android:layout_marginLeft="12dp"
-                android:layout_marginStart="12dp"
-                android:layout_toEndOf="@+id/beltstripe3"
-                android:layout_toRightOf="@+id/beltstripe3"
-                android:max="100"
-                android:progress="0"
-                android:progressDrawable="@drawable/progress_drawable_vertical" />
-
-            <ProgressBar
-                android:id="@+id/beltstripe3"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="15dp"
-                android:layout_height="35dp"
-                android:layout_alignLeft="@+id/beltstripe2"
-                android:layout_alignParentBottom="true"
-                android:layout_alignStart="@+id/beltstripe2"
-                android:layout_below="@+id/frameLayout"
-                android:layout_marginLeft="25dp"
-                android:layout_marginStart="25dp"
-                android:max="100"
-                android:progress="0"
-                android:progressDrawable="@drawable/progress_drawable_vertical" />
-
-            <ProgressBar
-                android:id="@+id/beltstripe2"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="15dp"
-                android:layout_height="35dp"
-                android:layout_marginEnd="89dp"
-                android:layout_marginRight="89dp"
-                android:max="100"
-                android:progress="0"
-                android:progressDrawable="@drawable/progress_drawable_vertical"
-                android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/beltbg"
-                android:layout_alignEnd="@+id/beltbg" />
-
-            <ProgressBar
-                android:id="@+id/beltstripe1"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="15dp"
-                android:layout_height="35dp"
-                android:layout_alignParentBottom="true"
-                android:layout_below="@+id/frameLayout"
-                android:layout_marginEnd="11dp"
-                android:layout_marginRight="11dp"
-                android:layout_toLeftOf="@+id/beltstripe2"
-                android:max="100"
-                android:progress="0"
-                android:progressDrawable="@drawable/progress_drawable_vertical" />
-
-            <TextView
-                android:id="@+id/c12_hlesc"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_alignLeft="@+id/beltbg"
-                android:layout_alignParentTop="true"
-                android:layout_alignStart="@+id/beltbg"
-                android:layout_marginTop="387dp"
-                android:background="@drawable/bordershape"
-                android:ems="10"
-                android:gravity="center_vertical"
-                android:lines="2"
-                android:text="Standing Headlock Defense"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp" />
-        </RelativeLayout>
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="417dp"
-            android:layout_height="62dp"
-            android:layout_gravity="clip_horizontal"
-            app:srcCompat="@drawable/gracicombatives1" />
-
-    </FrameLayout>
-
-
-</RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
